@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended : true}))
 
 mongoDB_connection()   
 
-app.use(rateLimiterMiddleware)
+app.use(rateLimiterMiddleware)   
 app.use("/api",notesRoute)
 
 const PORT = process.env.PORT || 3001
